@@ -1,0 +1,14 @@
+server:
+  port: 9001
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          demo:
+            token-uri: http://localhost:8080/realms/Developer/protocol/openid-connect/token
+        registration:
+          demo:
+            authorization-grant-type: client_credentials
+            client-id: dev-demo-app
+            client-secret: HRBOS23q5kTQG6r573SBp4BEJK3aQKg0
